@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>safeGlide — glider flight-safety analysis</title>
+<style>
+  :root{
+    --sky:#2b6cb0; --sky-dk:#1a4971; --sky-lt:#ebf3fb;
+    --ink:#1a2331; --muted:#5b6675; --line:#e2e8f0; --bg:#ffffff;
+    --warn:#dd6b20; --crit:#c53030; --ok:#2f855a;
+    --card:#f8fafc;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);line-height:1.6;background:var(--bg);-webkit-font-smoothing:antialiased}
+  a{color:var(--sky);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:920px;margin:0 auto;padding:0 22px}
+
+  /* hero */
+  header.hero{background:linear-gradient(160deg,#1a4971 0%,#2b6cb0 55%,#4a90d9 100%);color:#fff;
+    padding:64px 0 56px;position:relative;overflow:hidden}
+  header.hero .wrap{position:relative;z-index:1}
+  .glider{position:absolute;right:-20px;top:30px;width:260px;opacity:.18;z-index:0}
+  .badge{display:inline-block;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;
+    background:rgba(255,255,255,.16);padding:5px 12px;border-radius:999px;margin-bottom:18px}
+  h1{font-size:3rem;margin:0 0 .15em;font-weight:800;letter-spacing:-.02em}
+  .tag{font-size:1.25rem;max-width:620px;color:#eaf2fb;margin:0 0 26px}
+  .cta a{display:inline-block;background:#fff;color:var(--sky-dk);font-weight:600;
+    padding:11px 20px;border-radius:8px;margin:4px 8px 4px 0}
+  .cta a.ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.6)}
+
+  section{padding:50px 0;border-bottom:1px solid var(--line)}
+  h2{font-size:1.7rem;margin:0 0 .6em;letter-spacing:-.01em}
+  h3{font-size:1.12rem;margin:0 0 .35em}
+  p{margin:0 0 1em}
+  .lead{font-size:1.08rem;color:var(--muted)}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:26px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px}
+  .card .ic{font-size:1.6rem;margin-bottom:8px;display:block}
+  .card h3{font-size:1.05rem}
+  .card p{font-size:.95rem;color:var(--muted);margin:0}
+
+  /* danger pills */
+  .pills{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 6px}
+  .pill{font-size:.85rem;font-weight:600;padding:5px 13px;border-radius:999px;border:1px solid}
+  .pill.c{color:var(--ok);border-color:#9ae6b4;background:#f0fff4}
+  .pill.w{color:var(--warn);border-color:#fbd38d;background:#fffaf0}
+  .pill.x{color:var(--crit);border-color:#feb2b2;background:#fff5f5}
+
+  /* steps */
+  ol.steps{counter-reset:s;list-style:none;padding:0;margin:24px 0 0}
+  ol.steps li{position:relative;padding:0 0 22px 52px;border-left:2px solid var(--line);margin-left:16px}
+  ol.steps li:last-child{border-left-color:transparent;padding-bottom:0}
+  ol.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:-17px;top:-2px;
+    width:32px;height:32px;border-radius:50%;background:var(--sky);color:#fff;font-weight:700;
+    display:flex;align-items:center;justify-content:center;font-size:.95rem}
+  ol.steps h3{margin-bottom:.25em}
+
+  pre{background:#0f1b2d;color:#e6edf6;border-radius:10px;padding:16px 18px;overflow-x:auto;
+    font-size:.86rem;line-height:1.5;margin:.6em 0}
+  code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+  p code,li code{background:var(--sky-lt);color:var(--sky-dk);padding:1px 6px;border-radius:5px;font-size:.88em}
+
+  .note{background:var(--sky-lt);border-left:4px solid var(--sky);border-radius:0 8px 8px 0;
+    padding:14px 18px;font-size:.95rem;margin:22px 0}
+  .stack{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+  .stack span{font-size:.82rem;background:#eef2f7;border:1px solid var(--line);padding:4px 11px;border-radius:6px;color:var(--muted)}
+
+  footer{padding:34px 0 50px;color:var(--muted);font-size:.9rem}
+  .disclaimer{font-size:.85rem;color:var(--muted);background:#fff8f3;border:1px solid #fbd9b8;
+    border-radius:10px;padding:14px 18px;margin-top:22px}
+  @media(max-width:560px){h1{font-size:2.2rem}.glider{display:none}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <svg class="glider" viewBox="0 0 100 60" xmlns="http://www.w3.org/2000/svg" fill="#fff" aria-hidden="true">
+    <path d="M2 30 L60 26 L62 24 L66 24 L64 30 L98 32 L64 33 L66 38 L62 38 L60 34 L2 32 Z"/>
+    <path d="M58 26 L72 6 L75 7 L62 27 Z"/>
+  </svg>
+  <div class="wrap">
+    <span class="badge">Glider Safety Analysis</span>
+    <h1>safeGlide</h1>
+    <p class="tag">Turn your IGC flight logs into a clear picture of when, where, and how often you flew close to the edge — and how your risk exposure has changed as you gained experience.</p>
+    <div class="cta">
+      <a href="#guide">Get started →</a>
+      <a class="ghost" href="#what">What it does</a>
+    </div>
+  </div>
+</header>
+
+<section id="what">
+  <div class="wrap">
+    <h2>What is safeGlide?</h2>
+    <p class="lead">safeGlide is a personal toolkit for soaring pilots that analyses recorded flights for <strong>dangerous flying behaviour</strong> — situations that are low <em>and</em> slow <em>and</em> close to terrain, or where a landable field is no longer within glide range. It works on a single flight, or across an entire flying career.</p>
+
+    <div class="grid">
+      <div class="card">
+        <span class="ic">🪂</span>
+        <h3>Single-flight review</h3>
+        <p>Load one IGC file and see the whole flight on an interactive map, with altitude / speed / danger plots and a table of flagged episodes and thermal climbs.</p>
+      </div>
+      <div class="card">
+        <span class="ic">📈</span>
+        <h3>Career trends</h3>
+        <p>Aggregate the danger events from every flight you've logged and plot them as smoothed <em>rate</em> curves (events per flight-hour) against cumulative experience.</p>
+      </div>
+      <div class="card">
+        <span class="ic">⛰️</span>
+        <h3>Terrain &amp; ridge intelligence</h3>
+        <p>Uses SRTM elevation tiles, landable-field databases, and a watershed-derived ridge map to judge terrain proximity and required glide ratio.</p>
+      </div>
+      <div class="card">
+        <span class="ic">📱</span>
+        <h3>Native apps</h3>
+        <p>A SwiftUI <strong>GliderTrends</strong> app (macOS / iOS) reproduces the trend engine bit-for-bit, plus an in-flight <strong>GliderCockpit</strong> companion.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="danger">
+  <div class="wrap">
+    <h2>The danger model</h2>
+    <p>Each flight is reconstructed from its IGC trace — speed, heading, climb rate, height above terrain — and run through an <strong>energy-aware, four-detector danger model</strong>. Rather than flagging raw altitude, it looks at the combination of total energy, proximity to the ground, and whether a landing option is still reachable. Detected episodes are reduced to discrete <strong>events</strong>, each carrying a <em>type</em> and a <em>gravity</em>:</p>
+    <div class="pills">
+      <span class="pill c">caution</span>
+      <span class="pill w">warning</span>
+      <span class="pill x">critical</span>
+    </div>
+    <p style="margin-top:1em">Event <strong>types</strong> group the reason: circling low, terrain proximity, and field-reach (the nearest landable field requires a glide ratio you may not have). Curves are separated by both type and gravity so you can see, for example, whether your "circling-low" warnings have become rarer with experience.</p>
+    <div class="note">Per-flight summaries are cached on disk (keyed by file path, modification time and terrain flag), so re-running over a growing logbook only analyses the new flights.</div>
+  </div>
+</section>
+
+<section id="guide">
+  <div class="wrap">
+    <h2>User guide</h2>
+    <p class="lead">The analysis tools are Python; the native apps are Swift. Here's how to get the Python tools running.</p>
+
+    <ol class="steps">
+      <li>
+        <h3>Get the code &amp; create a virtual environment</h3>
+        <p>From the project folder:</p>
+        <pre><code>python3 -m venv venv
+source venv/bin/activate        # Windows: venv\Scripts\activate
+pip install -r requirements.txt</code></pre>
+        <p>This installs the analysis stack — <code>aerofiles</code> (IGC parsing), <code>numpy</code>/<code>scipy</code>, <code>geopy</code>, <code>folium</code>/<code>plotly</code> for maps &amp; charts, and <code>PyQt6</code> for the desktop GUIs.</p>
+      </li>
+
+      <li>
+        <h3>Review a single flight</h3>
+        <p>Launch the single-flight viewer, then open any <code>.igc</code> file:</p>
+        <pre><code>python gui_app.py</code></pre>
+        <p>You get an interactive map of the track with flagged danger episodes highlighted, altitude / speed / danger-level plots, and a table of episodes and thermals. Terrain checks use local SRTM tiles and a SeeYou <code>.cup</code> field database.</p>
+      </li>
+
+      <li>
+        <h3>See your career trends</h3>
+        <p>Launch the trends analyser:</p>
+        <pre><code>python trends_app.py</code></pre>
+        <p>Then gather flights one of two ways:</p>
+        <ul>
+          <li><strong>From WeGlide</strong> — with your WeGlide API key, your own flights are downloaded into <code>weglide_downloads/</code> and analysed automatically.</li>
+          <li><strong>From local files</strong> — every <code>*.igc</code> whose filename contains a name you type (across the project folder, the download folder and <code>~/Downloads</code>) is analysed.</li>
+        </ul>
+        <p>The result is a set of smoothed event-rate curves over your cumulative flight hours, with an adjustable smoothing window.</p>
+      </li>
+
+      <li>
+        <h3>(Optional) Run the native app</h3>
+        <p>The SwiftUI port lives in <code>GliderTrends/</code> and builds with Swift Package Manager on macOS:</p>
+        <pre><code>cd GliderTrends
+swift build
+swift run GliderTrendsApp</code></pre>
+        <p>Its numerical engine is verified <em>bit-for-bit</em> against the Python reference via golden fixtures.</p>
+      </li>
+    </ol>
+
+    <div class="note"><strong>Data you'll need:</strong> IGC flight logs, SRTM <code>.hgt</code> elevation tiles for terrain proximity (downloaded on demand by the Swift app), and a SeeYou <code>.cup</code> file of landable fields. A WeGlide API key is only required for the WeGlide download path — note that WeGlide only lets the key's owner download their own flights.</p></div>
+
+    <h3 style="margin-top:30px">Tech stack</h3>
+    <div class="stack">
+      <span>Python 3</span><span>NumPy / SciPy</span><span>aerofiles (IGC)</span><span>geopy</span>
+      <span>folium</span><span>plotly</span><span>PyQt6</span><span>SwiftUI</span><span>Swift Package Manager</span><span>SRTM elevation</span>
+    </div>
+
+    <div class="disclaimer">⚠️ <strong>Not a certified safety device.</strong> safeGlide is a personal analysis project for post-flight review and self-study. It is not avionics, not certified, and must never be relied on for in-flight decision-making. Always fly within your own training, currency and judgement.</div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>safeGlide — a personal soaring-safety analysis project. Built with Python &amp; SwiftUI.</p>
+  </div>
+</footer>
+
+</body>
+</html>
