@@ -521,14 +521,14 @@
       "fr": "Saison (heures de vol effectuées)"
     },
     "plot.suptitle_trend": {
-      "en": "Safety {metric} rate trends  (Gaussian ~{w:.0f} h window)  [{seats}]",
-      "de": "Trends der Sicherheits-{metric}-Rate  (Gauß ~{w:.0f} h Fenster)  [{seats}]",
-      "fr": "Tendances du taux de {metric} de sécurité  (gaussien ~{w:.0f} h)  [{seats}]"
+      "en": "Safety event rate trends  (Gaussian ~{w:.0f} h window)  [{seats}]",
+      "de": "Trends der Sicherheitsereignis-Rate  (Gauß ~{w:.0f} h Fenster)  [{seats}]",
+      "fr": "Tendances du taux d'événements de sécurité  (gaussien ~{w:.0f} h)  [{seats}]"
     },
     "plot.suptitle_season": {
-      "en": "Safety {metric} rate by season  [{seats}]",
-      "de": "Sicherheits-{metric}-Rate je Saison  [{seats}]",
-      "fr": "Taux de {metric} de sécurité par saison  [{seats}]"
+      "en": "Safety event rate by season  [{seats}]",
+      "de": "Sicherheitsereignis-Rate je Saison  [{seats}]",
+      "fr": "Taux d'événements de sécurité par saison  [{seats}]"
     },
     "plot.metric_timeatrisk": {
       "en": "time-at-risk",
@@ -935,6 +935,11 @@
       "de": "Kreisen / Fig-8",
       "fr": "Cercles / Huit"
     },
+    "layer.arrows": {
+      "en": "Direction arrows",
+      "de": "Richtungspfeile",
+      "fr": "Flèches de direction"
+    },
     "layer.menu": {
       "en": "Layers",
       "de": "Ebenen",
@@ -1249,6 +1254,31 @@
       "en": "The API key lets the app download your own flights from WeGlide.\n\n1. Sign in to your account at weglide.org.\n2. Open your profile settings.\n3. Find the API key (developer / token) section and copy the key.\n4. Paste it into the API key field.",
       "de": "Mit dem API-Schlüssel kann die App deine eigenen Flüge von WeGlide herunterladen.\n\n1. Melde dich bei deinem Konto auf weglide.org an.\n2. Öffne deine Profileinstellungen.\n3. Suche den Bereich API-Schlüssel (Entwickler / Token) und kopiere den Schlüssel.\n4. Füge ihn in das Feld API-Schlüssel ein.",
       "fr": "La clé API permet à l’application de télécharger vos propres vols depuis WeGlide.\n\n1. Connectez-vous à votre compte sur weglide.org.\n2. Ouvrez les paramètres de votre profil.\n3. Trouvez la section clé API (développeur / jeton) et copiez la clé.\n4. Collez-la dans le champ clé API."
+    },
+    "disclaimer.title": {
+      "en": "Safety notice",
+      "de": "Sicherheitshinweis",
+      "fr": "Avertissement de sécurité"
+    },
+    "disclaimer.body": {
+      "en": "safeGlide is not a certified aviation instrument. Its danger assessments are estimates computed from GPS logs and terrain data and can be wrong or incomplete. They are no substitute for training, airmanship or official information — as pilot in command you remain solely responsible for every decision.",
+      "de": "safeGlide ist kein zertifiziertes Luftfahrtinstrument. Seine Gefahrenbewertungen sind Schätzungen aus GPS-Aufzeichnungen und Geländedaten und können falsch oder unvollständig sein. Sie ersetzen weder Ausbildung noch fliegerisches Können oder offizielle Informationen — als verantwortliche(r) Pilot(in) bleibst du für jede Entscheidung allein verantwortlich.",
+      "fr": "safeGlide n’est pas un instrument aéronautique certifié. Ses évaluations de danger sont des estimations issues des traces GPS et des données de terrain et peuvent être erronées ou incomplètes. Elles ne remplacent ni la formation, ni le jugement du pilote, ni les informations officielles — en tant que commandant de bord, vous restez seul responsable de chaque décision."
+    },
+    "btn.acknowledge": {
+      "en": "I understand",
+      "de": "Verstanden",
+      "fr": "J’ai compris"
+    },
+    "msg.weglide_skipped": {
+      "en": "{n} of {total} WeGlide flights could not be downloaded — the analysis covers the remaining {ok}.",
+      "de": "{n} von {total} WeGlide-Flügen konnten nicht heruntergeladen werden — die Analyse umfasst die übrigen {ok}.",
+      "fr": "{n} des {total} vols WeGlide n’ont pas pu être téléchargés — l’analyse couvre les {ok} restants."
+    },
+    "help.wgkey.privacy": {
+      "en": "Privacy: the key is stored only in this browser (local storage) and is sent only to the WeGlide API to authorize downloads. safeGlide has no server — the key is never uploaded anywhere else. (If you configure a custom CORS proxy, requests including the key pass through it.)",
+      "de": "Datenschutz: Der Schlüssel wird nur in diesem Browser gespeichert (Local Storage) und ausschließlich an die WeGlide-API gesendet, um Downloads zu autorisieren. safeGlide hat keinen Server — der Schlüssel wird nirgendwo sonst hochgeladen. (Falls du einen eigenen CORS-Proxy konfigurierst, laufen die Anfragen samt Schlüssel über diesen.)",
+      "fr": "Confidentialité : la clé est stockée uniquement dans ce navigateur (stockage local) et n’est envoyée qu’à l’API WeGlide pour autoriser les téléchargements. safeGlide n’a pas de serveur — la clé n’est téléversée nulle part ailleurs. (Si vous configurez un proxy CORS personnalisé, les requêtes, clé comprise, passent par celui-ci.)"
     },
     "btn.open_weglide": {
       "en": "Open WeGlide",
