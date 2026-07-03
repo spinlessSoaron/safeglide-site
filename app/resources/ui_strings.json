@@ -1,0 +1,1315 @@
+{
+  "strings": {
+    "win.main_title": {
+      "en": "Glider pilot trend analyzer",
+      "de": "Segelflug-Trendanalyse",
+      "fr": "Analyse de tendance pour pilotes de planeur"
+    },
+    "btn.load": {
+      "en": "Load flights...",
+      "de": "Flüge laden…",
+      "fr": "Charger des vols…"
+    },
+    "btn.profile": {
+      "en": "Pilot profile",
+      "de": "Pilotenprofil",
+      "fr": "Profil du pilote"
+    },
+    "tip.load": {
+      "en": "Open the loader to download WeGlide flights, scan local IGC files,\nor reopen a previously saved analysis.",
+      "de": "Lader öffnen, um WeGlide-Flüge herunterzuladen, lokale IGC-Dateien\nzu durchsuchen oder eine gespeicherte Analyse erneut zu öffnen.",
+      "fr": "Ouvre le chargeur pour télécharger des vols WeGlide, scanner des\nfichiers IGC locaux ou rouvrir une analyse enregistrée."
+    },
+    "tip.profile": {
+      "en": "Re-open the fixed-criteria safety verdict for the loaded flights\n(it also pops up automatically after each analysis).",
+      "de": "Das Sicherheitsurteil (feste Kriterien) für die geladenen Flüge\nerneut öffnen (erscheint auch automatisch nach jeder Analyse).",
+      "fr": "Rouvre le verdict de sécurité (critères fixes) pour les vols\nchargés (il apparaît aussi automatiquement après chaque analyse)."
+    },
+    "status.none": {
+      "en": "No flights loaded - click “Load flights…” to begin.",
+      "de": "Keine Flüge geladen – auf „Flüge laden…“ klicken, um zu beginnen.",
+      "fr": "Aucun vol chargé – cliquez sur « Charger des vols… » pour commencer."
+    },
+    "lbl.avg_window": {
+      "en": "Averaging window:",
+      "de": "Mittelungsfenster:",
+      "fr": "Fenêtre de moyenne :"
+    },
+    "suffix.flight_h": {
+      "en": " flight h",
+      "de": " Flugstd.",
+      "fr": " h de vol"
+    },
+    "lbl.x_axis": {
+      "en": "X axis:",
+      "de": "X-Achse:",
+      "fr": "Axe X :"
+    },
+    "lbl.y_axis": {
+      "en": "Y axis:",
+      "de": "Y-Achse:",
+      "fr": "Axe Y :"
+    },
+    "lbl.show": {
+      "en": "Show:",
+      "de": "Anzeigen:",
+      "fr": "Afficher :"
+    },
+    "lbl.table_filter": {
+      "en": "  Table filter:",
+      "de": "  Tabellenfilter:",
+      "fr": "  Filtre du tableau :"
+    },
+    "tip.xaxis": {
+      "en": "Cumulative hours / calendar date / flight index: continuous\nflight-hour moving average (the date axis just interpolates the\nsame average onto takeoff dates).\nFlight season: one averaged data point per calendar year (no\nsmoothing) - the averaging window is ignored.",
+      "de": "Kumulierte Stunden / Datum / Flugnummer: fortlaufender gleitender\nMittelwert über Flugstunden (die Datumsachse interpoliert denselben\nMittelwert nur auf die Startdaten).\nFlugsaison: ein gemittelter Punkt pro Kalenderjahr (keine Glättung) –\ndas Mittelungsfenster wird ignoriert.",
+      "fr": "Heures cumulées / date / numéro de vol : moyenne glissante continue\nsur les heures de vol (l'axe des dates interpole cette moyenne sur\nles dates de décollage).\nSaison : un point moyen par année civile (aucun lissage) – la\nfenêtre de moyenne est ignorée."
+    },
+    "tip.metric": {
+      "en": "Event count: events per flight hour.\nEvent duration: seconds spent inside the event per flight hour.",
+      "de": "Ereignisanzahl: Ereignisse pro Flugstunde.\nEreignisdauer: Sekunden im Ereignis pro Flugstunde.",
+      "fr": "Nombre d'événements : événements par heure de vol.\nDurée des événements : secondes dans l'événement par heure de vol."
+    },
+    "tip.seats_filter": {
+      "en": "Restrict the per-flight table. Seat count is inferred from the IGC glider-type header.",
+      "de": "Begrenzt die Flugtabelle. Die Sitzzahl wird aus dem IGC-Flugzeugtyp abgeleitet.",
+      "fr": "Restreint le tableau des vols. Le nombre de sièges est déduit du type de planeur IGC."
+    },
+    "grp.display_opts": {
+      "en": "Display options",
+      "de": "Anzeigeoptionen",
+      "fr": "Options d'affichage"
+    },
+    "tab.trend": {
+      "en": "Trend curves",
+      "de": "Trendkurven",
+      "fr": "Courbes de tendance"
+    },
+    "tab.table": {
+      "en": "Per-flight summary",
+      "de": "Übersicht je Flug",
+      "fr": "Résumé par vol"
+    },
+    "hdr.date": {
+      "en": "Date",
+      "de": "Datum",
+      "fr": "Date"
+    },
+    "hdr.glider": {
+      "en": "Glider",
+      "de": "Flugzeug",
+      "fr": "Planeur"
+    },
+    "hdr.seats": {
+      "en": "Seats",
+      "de": "Sitze",
+      "fr": "Sièges"
+    },
+    "hdr.hours": {
+      "en": "Hours",
+      "de": "Stunden",
+      "fr": "Heures"
+    },
+    "hdr.events": {
+      "en": "Events",
+      "de": "Ereignisse",
+      "fr": "Événements"
+    },
+    "hdr.departure": {
+      "en": "Departure",
+      "de": "Startplatz",
+      "fr": "Aérodrome de départ"
+    },
+    "btn.open_flight": {
+      "en": "Open selected flight in single-flight viewer",
+      "de": "Gewählten Flug im Einzelflug-Viewer öffnen",
+      "fr": "Ouvrir le vol sélectionné dans la visionneuse"
+    },
+    "status.loaded": {
+      "en": "{n} flights, {h:.1f} flight hours, {e} safety events.",
+      "de": "{n} Flüge, {h:.1f} Flugstunden, {e} Sicherheitsereignisse.",
+      "fr": "{n} vols, {h:.1f} heures de vol, {e} événements de sécurité."
+    },
+    "msg.profile_title": {
+      "en": "Pilot profile",
+      "de": "Pilotenprofil",
+      "fr": "Profil du pilote"
+    },
+    "msg.profile_empty": {
+      "en": "Not enough flying loaded yet to draw up a profile.",
+      "de": "Noch nicht genug Flüge geladen, um ein Profil zu erstellen.",
+      "fr": "Pas encore assez de vols chargés pour établir un profil."
+    },
+    "msg.flight_unavail_title": {
+      "en": "Flight unavailable",
+      "de": "Flug nicht verfügbar",
+      "fr": "Vol indisponible"
+    },
+    "msg.flight_unavail": {
+      "en": "The IGC file for this flight could not be found on disk.",
+      "de": "Die IGC-Datei für diesen Flug wurde nicht gefunden.",
+      "fr": "Le fichier IGC de ce vol est introuvable sur le disque."
+    },
+    "msg.open_viewer_err_title": {
+      "en": "Could not open viewer",
+      "de": "Viewer konnte nicht geöffnet werden",
+      "fr": "Impossible d'ouvrir la visionneuse"
+    },
+    "win.profile": {
+      "en": "Pilot safety profile",
+      "de": "Sicherheitsprofil des Piloten",
+      "fr": "Profil de sécurité du pilote"
+    },
+    "btn.close": {
+      "en": "Close",
+      "de": "Schließen",
+      "fr": "Fermer"
+    },
+    "win.load_title": {
+      "en": "Load flights to analyze",
+      "de": "Flüge zur Analyse laden",
+      "fr": "Charger les vols à analyser"
+    },
+    "grp.flights": {
+      "en": "Flights to analyze",
+      "de": "Zu analysierende Flüge",
+      "fr": "Vols à analyser"
+    },
+    "rb.weglide": {
+      "en": "Download all my WeGlide flights",
+      "de": "Alle meine WeGlide-Flüge herunterladen",
+      "fr": "Télécharger tous mes vols WeGlide"
+    },
+    "rb.local": {
+      "en": "Use local IGC files matching name",
+      "de": "Lokale IGC-Dateien mit passendem Namen verwenden",
+      "fr": "Utiliser les fichiers IGC locaux correspondant au nom"
+    },
+    "rb.folder": {
+      "en": "Use all IGC files in a folder",
+      "de": "Alle IGC-Dateien in einem Ordner verwenden",
+      "fr": "Utiliser tous les fichiers IGC d'un dossier"
+    },
+    "ph.name": {
+      "en": "Pilot / file name, e.g. Olivier Faist",
+      "de": "Pilot/Dateiname, z. B. Olivier Faist",
+      "fr": "Nom du pilote / fichier, p. ex. Olivier Faist"
+    },
+    "row.name": {
+      "en": "Name:",
+      "de": "Name:",
+      "fr": "Nom :"
+    },
+    "ph.folder": {
+      "en": "Folder containing .igc files (searched recursively)",
+      "de": "Ordner mit .igc-Dateien (rekursiv durchsucht)",
+      "fr": "Dossier contenant des fichiers .igc (recherche récursive)"
+    },
+    "btn.browse": {
+      "en": "Browse...",
+      "de": "Durchsuchen…",
+      "fr": "Parcourir…"
+    },
+    "row.folder": {
+      "en": "Folder:",
+      "de": "Ordner:",
+      "fr": "Dossier :"
+    },
+    "ph.key": {
+      "en": "wg_... (only needed to download own flights)",
+      "de": "wg_… (nur zum Herunterladen eigener Flüge nötig)",
+      "fr": "wg_… (nécessaire uniquement pour télécharger vos vols)"
+    },
+    "row.key": {
+      "en": "WeGlide API key:",
+      "de": "WeGlide-API-Schlüssel:",
+      "fr": "Clé API WeGlide :"
+    },
+    "lbl.saved": {
+      "en": "Saved analyses:",
+      "de": "Gespeicherte Analysen:",
+      "fr": "Analyses enregistrées :"
+    },
+    "btn.forget": {
+      "en": "Forget",
+      "de": "Entfernen",
+      "fr": "Oublier"
+    },
+    "combo.select_saved": {
+      "en": "Select a saved analysis...",
+      "de": "Gespeicherte Analyse wählen…",
+      "fr": "Choisir une analyse enregistrée…"
+    },
+    "grp.analysis_opts": {
+      "en": "Analysis options",
+      "de": "Analyseoptionen",
+      "fr": "Options d'analyse"
+    },
+    "chk.terrain": {
+      "en": "Use terrain (SRTM) - needed for circling/terrain events",
+      "de": "Gelände (SRTM) verwenden – nötig für Kreis-/Geländeereignisse",
+      "fr": "Utiliser le relief (SRTM) – requis pour les événements spirale/relief"
+    },
+    "lbl.max_flights": {
+      "en": "Max flights:",
+      "de": "Max. Flüge:",
+      "fr": "Vols max. :"
+    },
+    "lbl.fields_cup": {
+      "en": "Fields (.cup):",
+      "de": "Felder (.cup):",
+      "fr": "Champs (.cup) :"
+    },
+    "ph.cup": {
+      "en": "SeeYou .cup file of landable fields",
+      "de": "SeeYou-.cup-Datei mit Landefeldern",
+      "fr": "Fichier SeeYou .cup des champs posables"
+    },
+    "lbl.fields_source": {
+      "en": "Field database:",
+      "de": "Felder-Datenbank:",
+      "fr": "Base de champs :"
+    },
+    "opt.fields_builtin_plus": {
+      "en": "Built-in + my files",
+      "de": "Integriert + eigene Dateien",
+      "fr": "Intégrée + mes fichiers"
+    },
+    "opt.fields_only_mine": {
+      "en": "Only my files",
+      "de": "Nur eigene Dateien",
+      "fr": "Seulement mes fichiers"
+    },
+    "lbl.fields_builtin": {
+      "en": "Built-in: combined.cup",
+      "de": "Integriert: combined.cup",
+      "fr": "Intégrée : combined.cup"
+    },
+    "btn.add_cup": {
+      "en": "Add .cup file(s)…",
+      "de": ".cup-Datei(en) hinzufügen…",
+      "fr": "Ajouter fichier(s) .cup…"
+    },
+    "msg.no_fields": {
+      "en": "No fields selected — glide/field events disabled.",
+      "de": "Keine Felder gewählt — Gleit-/Feld-Ereignisse deaktiviert.",
+      "fr": "Aucun champ sélectionné — événements de plané/champ désactivés."
+    },
+    "field.airfield": {
+      "en": "Airfield",
+      "de": "Flugplatz",
+      "fr": "Aérodrome"
+    },
+    "field.outlanding": {
+      "en": "Outlanding",
+      "de": "Außenlandung",
+      "fr": "Vache"
+    },
+    "ev.level": {
+      "en": "Level",
+      "de": "Stufe",
+      "fr": "Niveau"
+    },
+    "ev.minspeed": {
+      "en": "Min speed",
+      "de": "Min. Geschw.",
+      "fr": "Vitesse min"
+    },
+    "ev.minagl": {
+      "en": "Min AGL",
+      "de": "Min. GND",
+      "fr": "Min sol"
+    },
+    "ev.terrain": {
+      "en": "Terrain clr.",
+      "de": "Geländeabst.",
+      "fr": "Dist. relief"
+    },
+    "ev.reqld": {
+      "en": "Req. L/D",
+      "de": "Erf. Gleitzahl",
+      "fr": "Finesse req."
+    },
+    "ev.duration": {
+      "en": "Duration",
+      "de": "Dauer",
+      "fr": "Durée"
+    },
+    "plot.airspeed": {
+      "en": "Airspeed",
+      "de": "Geschwindigkeit",
+      "fr": "Vitesse"
+    },
+    "plot.reqld": {
+      "en": "Required L/D",
+      "de": "Erf. Gleitzahl",
+      "fr": "Finesse requise"
+    },
+    "btn.run": {
+      "en": "Run analysis",
+      "de": "Analyse starten",
+      "fr": "Lancer l'analyse"
+    },
+    "btn.cancel": {
+      "en": "Cancel",
+      "de": "Abbrechen",
+      "fr": "Annuler"
+    },
+    "status.ready": {
+      "en": "Ready.",
+      "de": "Bereit.",
+      "fr": "Prêt."
+    },
+    "msg.name_req_title": {
+      "en": "Name required",
+      "de": "Name erforderlich",
+      "fr": "Nom requis"
+    },
+    "msg.name_req_local": {
+      "en": "Enter a name substring to match local IGC files.",
+      "de": "Namensteil eingeben, um lokale IGC-Dateien zu finden.",
+      "fr": "Saisissez une partie du nom pour trouver les fichiers IGC locaux."
+    },
+    "msg.name_req_weglide": {
+      "en": "Enter your WeGlide pilot name to find your flights.",
+      "de": "WeGlide-Pilotennamen eingeben, um Ihre Flüge zu finden.",
+      "fr": "Saisissez votre nom de pilote WeGlide pour trouver vos vols."
+    },
+    "msg.folder_req_title": {
+      "en": "Folder required",
+      "de": "Ordner erforderlich",
+      "fr": "Dossier requis"
+    },
+    "msg.folder_req": {
+      "en": "Choose a valid folder containing .igc files.",
+      "de": "Gültigen Ordner mit .igc-Dateien wählen.",
+      "fr": "Choisissez un dossier valide contenant des fichiers .igc."
+    },
+    "status.cancelling": {
+      "en": "Cancelling after current flight...",
+      "de": "Abbruch nach aktuellem Flug…",
+      "fr": "Annulation après le vol en cours…"
+    },
+    "status.analyzed": {
+      "en": "Analyzed {n} flights, {h:.1f} flight hours, {e} safety events.",
+      "de": "{n} Flüge analysiert, {h:.1f} Flugstunden, {e} Sicherheitsereignisse.",
+      "fr": "{n} vols analysés, {h:.1f} heures de vol, {e} événements de sécurité."
+    },
+    "status.failed": {
+      "en": "Failed.",
+      "de": "Fehlgeschlagen.",
+      "fr": "Échec."
+    },
+    "msg.analysis_failed_title": {
+      "en": "Trend analysis failed",
+      "de": "Trendanalyse fehlgeschlagen",
+      "fr": "Échec de l'analyse de tendance"
+    },
+    "status.loaded_cache": {
+      "en": "Loaded {n} of {total} flights from cache (offline).",
+      "de": "{n} von {total} Flügen aus dem Cache geladen (offline).",
+      "fr": "{n} vols sur {total} chargés depuis le cache (hors ligne)."
+    },
+    "status.loaded_cache_missing": {
+      "en": "Loaded {n} of {total} flights from cache (offline). {missing} flight(s) need re-analysis - press 'Run analysis'.",
+      "de": "{n} von {total} Flügen aus dem Cache geladen (offline). {missing} Flug/Flüge müssen neu analysiert werden – „Analyse starten“.",
+      "fr": "{n} vols sur {total} chargés depuis le cache (hors ligne). {missing} vol(s) à réanalyser – cliquez sur « Lancer l'analyse »."
+    },
+    "label.flights_count": {
+      "en": "{n} flights",
+      "de": "{n} Flüge",
+      "fr": "{n} vols"
+    },
+    "wk.searching": {
+      "en": "Searching WeGlide for pilot \"{name}\"...",
+      "de": "Suche bei WeGlide nach Pilot „{name}“…",
+      "fr": "Recherche du pilote « {name} » sur WeGlide…"
+    },
+    "wk.listing": {
+      "en": "Listing flights for {name}...",
+      "de": "Flüge von {name} werden aufgelistet…",
+      "fr": "Liste des vols de {name}…"
+    },
+    "wk.downloading": {
+      "en": "Downloading flight {fid} ({i}/{total})...",
+      "de": "Lade Flug {fid} herunter ({i}/{total})…",
+      "fr": "Téléchargement du vol {fid} ({i}/{total})…"
+    },
+    "wk.skipped_flight": {
+      "en": "Skipped flight {fid}: {err}",
+      "de": "Flug {fid} übersprungen: {err}",
+      "fr": "Vol {fid} ignoré : {err}"
+    },
+    "wk.skipped_dupes": {
+      "en": "Skipped {n} duplicate IGC file(s).",
+      "de": "{n} doppelte IGC-Datei(en) übersprungen.",
+      "fr": "{n} fichier(s) IGC en double ignoré(s)."
+    },
+    "wk.cached": {
+      "en": "Cached: {name} ({i}/{total})",
+      "de": "Im Cache: {name} ({i}/{total})",
+      "fr": "En cache : {name} ({i}/{total})"
+    },
+    "wk.analyzing": {
+      "en": "Analyzing {name} ({i}/{total})...",
+      "de": "Analysiere {name} ({i}/{total})…",
+      "fr": "Analyse de {name} ({i}/{total})…"
+    },
+    "wk.skipped_name": {
+      "en": "Skipped {name}: {err}",
+      "de": "{name} übersprungen: {err}",
+      "fr": "{name} ignoré : {err}"
+    },
+    "wk.dupe_flights": {
+      "en": "Skipped {n} duplicate flight(s) (same takeoff, different file).",
+      "de": "{n} doppelte(r) Flug/Flüge übersprungen (gleicher Start, andere Datei).",
+      "fr": "{n} vol(s) en double ignoré(s) (même décollage, fichier différent)."
+    },
+    "err.no_matching": {
+      "en": "No matching IGC files were found.",
+      "de": "Keine passenden IGC-Dateien gefunden.",
+      "fr": "Aucun fichier IGC correspondant trouvé."
+    },
+    "err.none_analyzed": {
+      "en": "No flights could be analyzed.",
+      "de": "Es konnten keine Flüge analysiert werden.",
+      "fr": "Aucun vol n'a pu être analysé."
+    },
+    "plot.score_per_h": {
+      "en": "score / flight h",
+      "de": "Score / Flugstd.",
+      "fr": "score / h de vol"
+    },
+    "plot.combined_title": {
+      "en": "Combined danger score  -  weighted: critical×20, warning×5, caution×1; circling×2 vs terrain/field",
+      "de": "Kombinierter Gefahren-Score  -  gewichtet: kritisch×20, Warnung×5, Vorsicht×1; Kreisen×2 vs. Gelände/Feld",
+      "fr": "Score de danger combiné  -  pondéré : critique×20, alerte×5, prudence×1 ; spirale×2 vs relief/champ"
+    },
+    "plot.outland_title": {
+      "en": "Combined outlanding score  -  field reachability only; weighted: critical×5, warning×2, caution×1",
+      "de": "Kombinierter Außenlande-Score  -  nur Felderreichbarkeit; gewichtet: kritisch×5, Warnung×2, Vorsicht×1",
+      "fr": "Score de vache combiné  -  accessibilité des champs seulement ; pondéré : critique×5, alerte×2, prudence×1"
+    },
+    "plot.sec_per_h": {
+      "en": "seconds / flight h",
+      "de": "Sekunden / Flugstd.",
+      "fr": "secondes / h de vol"
+    },
+    "plot.ev_per_h": {
+      "en": "events / flight h",
+      "de": "Ereignisse / Flugstd.",
+      "fr": "événements / h de vol"
+    },
+    "plot.takeoff_date": {
+      "en": "Takeoff date",
+      "de": "Startdatum",
+      "fr": "Date de décollage"
+    },
+    "plot.flight_number": {
+      "en": "Flight number",
+      "de": "Flugnummer",
+      "fr": "Numéro de vol"
+    },
+    "plot.cum_hours": {
+      "en": "Cumulative flight hours",
+      "de": "Kumulierte Flugstunden",
+      "fr": "Heures de vol cumulées"
+    },
+    "plot.season_x": {
+      "en": "Flight season (flight hours flown)",
+      "de": "Flugsaison (geflogene Flugstunden)",
+      "fr": "Saison (heures de vol effectuées)"
+    },
+    "plot.suptitle_trend": {
+      "en": "Safety {metric} rate trends  (Gaussian ~{w:.0f} h window)  [{seats}]",
+      "de": "Trends der Sicherheits-{metric}-Rate  (Gauß ~{w:.0f} h Fenster)  [{seats}]",
+      "fr": "Tendances du taux de {metric} de sécurité  (gaussien ~{w:.0f} h)  [{seats}]"
+    },
+    "plot.suptitle_season": {
+      "en": "Safety {metric} rate by season  [{seats}]",
+      "de": "Sicherheits-{metric}-Rate je Saison  [{seats}]",
+      "fr": "Taux de {metric} de sécurité par saison  [{seats}]"
+    },
+    "plot.metric_timeatrisk": {
+      "en": "time-at-risk",
+      "de": "Risikozeit",
+      "fr": "temps à risque"
+    },
+    "plot.metric_eventcount": {
+      "en": "event-count",
+      "de": "Ereigniszahl",
+      "fr": "nombre d'événements"
+    },
+    "plot.no_seat": {
+      "en": "No seat category selected.",
+      "de": "Keine Sitzkategorie ausgewählt.",
+      "fr": "Aucune catégorie de sièges sélectionnée."
+    },
+    "plot.no_events": {
+      "en": "No safety events found in these flights.",
+      "de": "Keine Sicherheitsereignisse in diesen Flügen.",
+      "fr": "Aucun événement de sécurité dans ces vols."
+    },
+    "plot.total": {
+      "en": "total {n:.0f}",
+      "de": "gesamt {n:.0f}",
+      "fr": "total {n:.0f}"
+    },
+    "fam.circling": {
+      "en": "Circling low (stall / spin)",
+      "de": "Tiefes Kreisen (Strömungsabriss/Trudeln)",
+      "fr": "Spirale basse (décrochage/vrille)"
+    },
+    "fam.terrain": {
+      "en": "Low & slow near terrain",
+      "de": "Tief & langsam am Gelände",
+      "fr": "Bas et lent près du relief"
+    },
+    "fam.field": {
+      "en": "Field reachability (glide)",
+      "de": "Felderreichbarkeit (Gleiten)",
+      "fr": "Accessibilité des champs (plané)"
+    },
+    "lvl.0": {
+      "en": "None",
+      "de": "Keine",
+      "fr": "Aucun"
+    },
+    "lvl.1": {
+      "en": "Caution",
+      "de": "Vorsicht",
+      "fr": "Prudence"
+    },
+    "lvl.2": {
+      "en": "Warning",
+      "de": "Warnung",
+      "fr": "Alerte"
+    },
+    "lvl.3": {
+      "en": "Critical",
+      "de": "Kritisch",
+      "fr": "Critique"
+    },
+    "seat.single": {
+      "en": "Single-seater",
+      "de": "Einsitzer",
+      "fr": "Monoplace"
+    },
+    "seat.double": {
+      "en": "Two-seater",
+      "de": "Doppelsitzer",
+      "fr": "Biplace"
+    },
+    "seat.combined": {
+      "en": "All flights",
+      "de": "Alle Flüge",
+      "fr": "Tous les vols"
+    },
+    "hdr.caution": {
+      "en": "Caution",
+      "de": "Vorsicht",
+      "fr": "Prudence"
+    },
+    "hdr.warning": {
+      "en": "Warning",
+      "de": "Warnung",
+      "fr": "Alerte"
+    },
+    "hdr.critical": {
+      "en": "Critical",
+      "de": "Kritisch",
+      "fr": "Critique"
+    },
+    "tab.map": {
+      "en": "Map",
+      "de": "Karte",
+      "fr": "Carte"
+    },
+    "tab.3d": {
+      "en": "3D view",
+      "de": "3D-Ansicht",
+      "fr": "Vue 3D"
+    },
+    "tab.plots": {
+      "en": "Plots",
+      "de": "Diagramme",
+      "fr": "Graphiques"
+    },
+    "tab.lowslow": {
+      "en": "Low & slow episodes",
+      "de": "Tief & langsam",
+      "fr": "Bas & lent"
+    },
+    "tab.circling": {
+      "en": "Circling-low episodes",
+      "de": "Tiefes Kreisen",
+      "fr": "Spirales basses"
+    },
+    "tab.field": {
+      "en": "Field-reach episodes",
+      "de": "Feld-Erreichbarkeit",
+      "fr": "Atteinte des champs"
+    },
+    "tab.thermals": {
+      "en": "Thermal climbs",
+      "de": "Thermiksteigen",
+      "fr": "Ascendances"
+    },
+    "detail.analyzing": {
+      "en": "Analyzing flight…",
+      "de": "Flug wird analysiert…",
+      "fr": "Analyse du vol…"
+    },
+    "detail.fail.title": {
+      "en": "Could not analyze this flight",
+      "de": "Flug konnte nicht analysiert werden",
+      "fr": "Impossible d’analyser ce vol"
+    },
+    "detail.fail.body": {
+      "en": "The IGC file may be missing or unreadable.",
+      "de": "Die IGC-Datei fehlt evtl. oder ist unlesbar.",
+      "fr": "Le fichier IGC est introuvable ou illisible."
+    },
+    "cfg.ld.auto": {
+      "en": "Auto-detect L/D",
+      "de": "L/D automatisch",
+      "fr": "L/D auto"
+    },
+    "cfg.ld": {
+      "en": "Best glide L/D",
+      "de": "Bestes Gleiten L/D",
+      "fr": "Finesse max L/D"
+    },
+    "cfg.stall.auto": {
+      "en": "Auto-detect stall",
+      "de": "Überziehen automatisch",
+      "fr": "Décrochage auto"
+    },
+    "cfg.stall": {
+      "en": "Stall speed",
+      "de": "Überziehgeschw.",
+      "fr": "Vitesse de décrochage"
+    },
+    "cfg.reanalyze": {
+      "en": "Re-analyze",
+      "de": "Neu analysieren",
+      "fr": "Réanalyser"
+    },
+    "stat.duration": {
+      "en": "Duration",
+      "de": "Dauer",
+      "fr": "Durée"
+    },
+    "stat.airborne": {
+      "en": "Airborne",
+      "de": "In der Luft",
+      "fr": "En vol"
+    },
+    "stat.seats": {
+      "en": "Seats",
+      "de": "Sitze",
+      "fr": "Places"
+    },
+    "stat.maxalt": {
+      "en": "Max alt",
+      "de": "Max. Höhe",
+      "fr": "Alt. max"
+    },
+    "stat.ld": {
+      "en": "Best L/D",
+      "de": "Bestes L/D",
+      "fr": "Finesse max"
+    },
+    "stat.stall": {
+      "en": "Stall",
+      "de": "Überziehen",
+      "fr": "Décrochage"
+    },
+    "stat.logging": {
+      "en": "Logging",
+      "de": "Aufzeichnung",
+      "fr": "Échantillonnage"
+    },
+    "stat.fixes": {
+      "en": "Fixes",
+      "de": "Punkte",
+      "fr": "Points"
+    },
+    "stat.thermals": {
+      "en": "Thermals",
+      "de": "Thermik",
+      "fr": "Ascendances"
+    },
+    "stat.events": {
+      "en": "Events",
+      "de": "Ereignisse",
+      "fr": "Événements"
+    },
+    "plot.gps": {
+      "en": "GPS altitude",
+      "de": "GPS-Höhe",
+      "fr": "Altitude GPS"
+    },
+    "plot.terrain": {
+      "en": "Terrain elevation",
+      "de": "Geländehöhe",
+      "fr": "Altitude du terrain"
+    },
+    "plot.altitude": {
+      "en": "Altitude",
+      "de": "Höhe",
+      "fr": "Altitude"
+    },
+    "plot.speed": {
+      "en": "Ground speed",
+      "de": "Geschwindigkeit über Grund",
+      "fr": "Vitesse sol"
+    },
+    "plot.agl": {
+      "en": "AGL",
+      "de": "Höhe über Grund",
+      "fr": "Hauteur sol"
+    },
+    "plot.energy": {
+      "en": "Energy altitude",
+      "de": "Energiehöhe",
+      "fr": "Altitude énergétique"
+    },
+    "plot.aglenergy": {
+      "en": "AGL vs energy altitude",
+      "de": "Höhe ü. Grund vs. Energiehöhe",
+      "fr": "Hauteur sol vs altitude énergétique"
+    },
+    "plot.risk.combined": {
+      "en": "Risk degree (combined)",
+      "de": "Risikograd (kombiniert)",
+      "fr": "Niveau de risque (combiné)"
+    },
+    "plot.risk.lowslow": {
+      "en": "Low & slow / terrain",
+      "de": "Tief & langsam / Gelände",
+      "fr": "Bas & lent / relief"
+    },
+    "plot.risk.field": {
+      "en": "Glide to nearest field",
+      "de": "Gleiten zum nächsten Feld",
+      "fr": "Plané vers le champ le plus proche"
+    },
+    "plot.risk": {
+      "en": "Risk degree",
+      "de": "Risikograd",
+      "fr": "Niveau de risque"
+    },
+    "plot.risk.timeatlevel": {
+      "en": "time at level:  caution %ds | warning %ds | critical %ds",
+      "de": "Zeit je Stufe:  Vorsicht %ds | Warnung %ds | kritisch %ds",
+      "fr": "temps par niveau :  prudence %ds | alerte %ds | critique %ds"
+    },
+    "plot.minutes": {
+      "en": "minutes",
+      "de": "Minuten",
+      "fr": "minutes"
+    },
+    "col.level": {
+      "en": "Level",
+      "de": "Stufe",
+      "fr": "Niveau"
+    },
+    "col.reason": {
+      "en": "Reason",
+      "de": "Grund",
+      "fr": "Motif"
+    },
+    "col.start": {
+      "en": "Start (s)",
+      "de": "Start (s)",
+      "fr": "Début (s)"
+    },
+    "col.duration": {
+      "en": "Duration (s)",
+      "de": "Dauer (s)",
+      "fr": "Durée (s)"
+    },
+    "col.minspeed": {
+      "en": "Min speed (km/h)",
+      "de": "Min. Geschw. (km/h)",
+      "fr": "Vitesse min (km/h)"
+    },
+    "col.minagl": {
+      "en": "Min AGL (m)",
+      "de": "Min. Höhe ü.G. (m)",
+      "fr": "Hauteur sol min (m)"
+    },
+    "col.reqld": {
+      "en": "Req L/D",
+      "de": "Benötigtes L/D",
+      "fr": "L/D requis"
+    },
+    "col.lat": {
+      "en": "Lat",
+      "de": "Breite",
+      "fr": "Lat"
+    },
+    "col.lon": {
+      "en": "Lon",
+      "de": "Länge",
+      "fr": "Lon"
+    },
+    "col.gain": {
+      "en": "Gain (m)",
+      "de": "Gewinn (m)",
+      "fr": "Gain (m)"
+    },
+    "col.climb": {
+      "en": "Climb (m/s)",
+      "de": "Steigen (m/s)",
+      "fr": "Montée (m/s)"
+    },
+    "col.top": {
+      "en": "Top (m)",
+      "de": "Gipfel (m)",
+      "fr": "Sommet (m)"
+    },
+    "col.entrydist": {
+      "en": "Entry dist to terrain (m)",
+      "de": "Einstieg Abstand z. Gelände (m)",
+      "fr": "Dist. terrain à l’entrée (m)"
+    },
+    "table.none": {
+      "en": "No episodes",
+      "de": "Keine Ereignisse",
+      "fr": "Aucun épisode"
+    },
+    "table.none.body": {
+      "en": "No flagged segments of this kind on this flight.",
+      "de": "Keine markierten Abschnitte dieser Art auf diesem Flug.",
+      "fr": "Aucun segment signalé de ce type sur ce vol."
+    },
+    "table.nofield": {
+      "en": "no field",
+      "de": "kein Feld",
+      "fr": "aucun champ"
+    },
+    "table.nothermals": {
+      "en": "No thermals",
+      "de": "Keine Thermik",
+      "fr": "Aucune ascendance"
+    },
+    "table.nothermals.body": {
+      "en": "No sustained climbs over 200 m were detected.",
+      "de": "Keine anhaltenden Steigen über 200 m erkannt.",
+      "fr": "Aucune montée soutenue de plus de 200 m détectée."
+    },
+    "layer.track": {
+      "en": "Flight track",
+      "de": "Flugweg",
+      "fr": "Trace du vol"
+    },
+    "layer.danger": {
+      "en": "Danger level",
+      "de": "Risikostufe",
+      "fr": "Niveau de risque"
+    },
+    "layer.tow": {
+      "en": "Tow/launch",
+      "de": "Schlepp/Start",
+      "fr": "Remorquage/décollage"
+    },
+    "layer.episodes": {
+      "en": "Episodes",
+      "de": "Ereignisse",
+      "fr": "Épisodes"
+    },
+    "layer.fields": {
+      "en": "Landing fields",
+      "de": "Landefelder",
+      "fr": "Champs d’atterrissage"
+    },
+    "layer.thermals": {
+      "en": "Thermals",
+      "de": "Thermik",
+      "fr": "Ascendances"
+    },
+    "layer.circling": {
+      "en": "Circling / Fig-8",
+      "de": "Kreisen / Fig-8",
+      "fr": "Cercles / Huit"
+    },
+    "layer.menu": {
+      "en": "Layers",
+      "de": "Ebenen",
+      "fr": "Couches"
+    },
+    "col.view3d": {
+      "en": "3D",
+      "de": "3D",
+      "fr": "3D"
+    },
+    "focus.title": {
+      "en": "3D view",
+      "de": "3D-Ansicht",
+      "fr": "Vue 3D"
+    },
+    "fam.ridge": {
+      "en": "Ridge crossing (low energy)",
+      "de": "Kammüberquerung (wenig Energie)",
+      "fr": "Franchissement de crête (faible énergie)"
+    },
+    "tab.ridge": {
+      "en": "Ridge crossings",
+      "de": "Kammüberquerungen",
+      "fr": "Franchissements de crête"
+    },
+    "ridge.sev.ok": {
+      "en": "OK",
+      "de": "OK",
+      "fr": "OK"
+    },
+    "col.severity": {
+      "en": "Severity",
+      "de": "Schweregrad",
+      "fr": "Gravité"
+    },
+    "col.ridge": {
+      "en": "Ridge (basin A | B)",
+      "de": "Kamm (Becken A | B)",
+      "fr": "Crête (bassin A | B)"
+    },
+    "col.region": {
+      "en": "Region",
+      "de": "Region",
+      "fr": "Région"
+    },
+    "col.time": {
+      "en": "Time (s)",
+      "de": "Zeit (s)",
+      "fr": "Temps (s)"
+    },
+    "col.locmin": {
+      "en": "Local min (m)",
+      "de": "Lokales Min (m)",
+      "fr": "Min local (m)"
+    },
+    "col.ridgeelev": {
+      "en": "Ridge (m)",
+      "de": "Kamm (m)",
+      "fr": "Crête (m)"
+    },
+    "col.alt": {
+      "en": "Alt (m)",
+      "de": "Höhe (m)",
+      "fr": "Alt (m)"
+    },
+    "col.kin": {
+      "en": "Kinetic (m)",
+      "de": "Kinetisch (m)",
+      "fr": "Cinétique (m)"
+    },
+    "col.reserve": {
+      "en": "Reserve (m)",
+      "de": "Reserve (m)",
+      "fr": "Réserve (m)"
+    },
+    "table.noridges": {
+      "en": "No ridge crossings",
+      "de": "Keine Kammüberquerungen",
+      "fr": "Aucun franchissement de crête"
+    },
+    "table.noridges.body": {
+      "en": "The flight did not cross any catalogued watershed divide.",
+      "de": "Der Flug überquerte keine erfasste Wasserscheide.",
+      "fr": "Le vol n’a franchi aucune ligne de partage des eaux répertoriée."
+    },
+    "layer.basins": {
+      "en": "Watershed basins",
+      "de": "Wassereinzugsgebiete",
+      "fr": "Bassins versants"
+    },
+    "layer.crossedridges": {
+      "en": "Crossed ridges",
+      "de": "Überquerte Kämme",
+      "fr": "Crêtes franchies"
+    },
+    "layer.crossings": {
+      "en": "Ridge crossings",
+      "de": "Kammüberquerungen",
+      "fr": "Franchissements de crête"
+    },
+    "ev.reserve": {
+      "en": "Energy reserve",
+      "de": "Energiereserve",
+      "fr": "Réserve d’énergie"
+    },
+    "ev.locmin": {
+      "en": "Local ridge min",
+      "de": "Lokales Kammminimum",
+      "fr": "Min local de crête"
+    },
+    "ev.col": {
+      "en": "col",
+      "de": "Sattel",
+      "fr": "col"
+    },
+    "ev.kinetic": {
+      "en": "kinetic",
+      "de": "kinetisch",
+      "fr": "cinétique"
+    },
+    "focus.ridge": {
+      "en": "3D view — ridge crossing",
+      "de": "3D-Ansicht — Kammüberquerung",
+      "fr": "Vue 3D — franchissement de crête"
+    },
+    "btn.configure_graph": {
+      "en": "Configure graph",
+      "de": "Diagramm konfigurieren",
+      "fr": "Configurer le graphique"
+    },
+    "btn.done": {
+      "en": "Done",
+      "de": "Fertig",
+      "fr": "Terminé"
+    },
+    "title.trends": {
+      "en": "Trends",
+      "de": "Trends",
+      "fr": "Tendances"
+    },
+    "tab.fly": {
+      "en": "Fly",
+      "de": "Fliegen",
+      "fr": "Voler"
+    },
+    "tab.review": {
+      "en": "Trends",
+      "de": "Trends",
+      "fr": "Tendances"
+    },
+    "lbl.language": {
+      "en": "Language",
+      "de": "Sprache",
+      "fr": "Langue"
+    },
+    "lbl.more": {
+      "en": "More",
+      "de": "Mehr",
+      "fr": "Plus"
+    },
+    "btn.switch_app": {
+      "en": "Switch app",
+      "de": "App wechseln",
+      "fr": "Changer d’app"
+    },
+    "grp.import": {
+      "en": "Import files",
+      "de": "Dateien importieren",
+      "fr": "Importer des fichiers"
+    },
+    "btn.choose_files": {
+      "en": "Choose IGC files…",
+      "de": "IGC-Dateien wählen…",
+      "fr": "Choisir des fichiers IGC…"
+    },
+    "btn.download_weglide": {
+      "en": "Download my flights",
+      "de": "Meine Flüge laden",
+      "fr": "Télécharger mes vols"
+    },
+    "msg.import_hint": {
+      "en": "Pick .igc files from Files or iCloud — they're saved in the app and analysed together.",
+      "de": "Wähle .igc-Dateien aus „Dateien“ oder iCloud – sie werden in der App gespeichert und zusammen ausgewertet.",
+      "fr": "Choisissez des fichiers .igc depuis Fichiers ou iCloud – ils sont enregistrés dans l’app et analysés ensemble."
+    },
+    "lbl.imported_lib": {
+      "en": "Imported library",
+      "de": "Importierte Sammlung",
+      "fr": "Bibliothèque importée"
+    },
+    "title.analyze": {
+      "en": "Analyse flight",
+      "de": "Flug analysieren",
+      "fr": "Analyser un vol"
+    },
+    "btn.open_igc": {
+      "en": "Open IGC file…",
+      "de": "IGC-Datei öffnen…",
+      "fr": "Ouvrir un fichier IGC…"
+    },
+    "lbl.recent": {
+      "en": "Recent flights",
+      "de": "Letzte Flüge",
+      "fr": "Vols récents"
+    },
+    "msg.analyzing_one": {
+      "en": "Analysing flight…",
+      "de": "Flug wird analysiert…",
+      "fr": "Analyse du vol…"
+    },
+    "msg.pick_to_analyze": {
+      "en": "Open a flight log to analyse it in detail — map, 3D, plots and event tables.",
+      "de": "Öffne eine Flugaufzeichnung für die Detailanalyse – Karte, 3D, Diagramme und Ereignistabellen.",
+      "fr": "Ouvrez une trace de vol pour l’analyser en détail – carte, 3D, graphiques et tableaux d’événements."
+    },
+    "card.analyze.sub": {
+      "en": "Inspect one flight in detail: map, 3D, plots, episodes",
+      "de": "Einen Flug im Detail: Karte, 3D, Diagramme, Episoden",
+      "fr": "Un vol en détail : carte, 3D, graphiques, épisodes"
+    },
+    "chooser.subtitle": {
+      "en": "Choose what you want to do",
+      "de": "Wähle, was du tun möchtest",
+      "fr": "Choisissez ce que vous voulez faire"
+    },
+    "chooser.footer": {
+      "en": "You can switch apps any time from Settings.",
+      "de": "Du kannst jederzeit in den Einstellungen wechseln.",
+      "fr": "Vous pouvez changer d’app à tout moment dans les réglages."
+    },
+    "card.fly.sub": {
+      "en": "In-flight cockpit: attitude, map and live safety status",
+      "de": "Cockpit im Flug: Lage, Karte und Live-Sicherheitsstatus",
+      "fr": "Cockpit en vol : assiette, carte et sécurité en direct"
+    },
+    "card.trends.sub": {
+      "en": "Review your whole log and how your safety margins evolve",
+      "de": "Dein ganzes Flugbuch und wie sich deine Sicherheitsmargen entwickeln",
+      "fr": "Tout votre carnet et l’évolution de vos marges de sécurité"
+    },
+    "card.fly.title": {
+      "en": "Fly",
+      "de": "Fliegen",
+      "fr": "Voler"
+    },
+    "card.analyze.title": {
+      "en": "Analyse a flight",
+      "de": "Flug analysieren",
+      "fr": "Analyser un vol"
+    },
+    "card.trends.title": {
+      "en": "Trends",
+      "de": "Trends",
+      "fr": "Tendances"
+    },
+    "card.maps.title": {
+      "en": "Maps & Data",
+      "de": "Karten & Daten",
+      "fr": "Cartes et données"
+    },
+    "card.maps.sub": {
+      "en": "Download offline terrain tiles and import your waypoints",
+      "de": "Offline-Geländekacheln laden und eigene Wegpunkte importieren",
+      "fr": "Téléchargez le relief hors-ligne et importez vos points de virage"
+    },
+    "layer.basemap": {
+      "en": "Base map",
+      "de": "Kartenstil",
+      "fr": "Fond de carte"
+    },
+    "lbl.sort": {
+      "en": "Sort",
+      "de": "Sortieren",
+      "fr": "Trier"
+    },
+    "btn.clear_cache": {
+      "en": "Clear cached analysis",
+      "de": "Analyse-Cache löschen",
+      "fr": "Effacer l’analyse en cache"
+    },
+    "msg.clear_cache_confirm": {
+      "en": "Delete all cached flight analyses and saved analyses? Flights will be fully re-analysed next time.",
+      "de": "Alle zwischengespeicherten Fluganalysen und gespeicherten Analysen löschen? Flüge werden beim nächsten Mal vollständig neu analysiert.",
+      "fr": "Supprimer toutes les analyses de vol en cache et les analyses enregistrées ? Les vols seront entièrement réanalysés la prochaine fois."
+    },
+    "grp.maintenance": {
+      "en": "Cache",
+      "de": "Cache",
+      "fr": "Cache"
+    },
+    "btn.delete_igc": {
+      "en": "Delete stored flights",
+      "de": "Gespeicherte Flüge löschen",
+      "fr": "Supprimer les vols enregistrés"
+    },
+    "msg.delete_igc_confirm": {
+      "en": "Delete all IGC files stored on this device (imported and downloaded)? This does not affect your WeGlide account.",
+      "de": "Alle auf diesem Gerät gespeicherten IGC-Dateien löschen (importiert und heruntergeladen)? Ihr WeGlide-Konto ist nicht betroffen.",
+      "fr": "Supprimer tous les fichiers IGC stockés sur cet appareil (importés et téléchargés) ? Votre compte WeGlide n’est pas affecté."
+    },
+    "grp.storage": {
+      "en": "Storage",
+      "de": "Speicher",
+      "fr": "Stockage"
+    },
+    "help.wgkey.title": {
+      "en": "WeGlide API key",
+      "de": "WeGlide-API-Schlüssel",
+      "fr": "Clé API WeGlide"
+    },
+    "help.wgkey.body": {
+      "en": "The API key lets the app download your own flights from WeGlide.\n\n1. Sign in to your account at weglide.org.\n2. Open your profile settings.\n3. Find the API key (developer / token) section and copy the key.\n4. Paste it into the API key field.",
+      "de": "Mit dem API-Schlüssel kann die App deine eigenen Flüge von WeGlide herunterladen.\n\n1. Melde dich bei deinem Konto auf weglide.org an.\n2. Öffne deine Profileinstellungen.\n3. Suche den Bereich API-Schlüssel (Entwickler / Token) und kopiere den Schlüssel.\n4. Füge ihn in das Feld API-Schlüssel ein.",
+      "fr": "La clé API permet à l’application de télécharger vos propres vols depuis WeGlide.\n\n1. Connectez-vous à votre compte sur weglide.org.\n2. Ouvrez les paramètres de votre profil.\n3. Trouvez la section clé API (développeur / jeton) et copiez la clé.\n4. Collez-la dans le champ clé API."
+    },
+    "btn.open_weglide": {
+      "en": "Open WeGlide",
+      "de": "WeGlide öffnen",
+      "fr": "Ouvrir WeGlide"
+    }
+  },
+  "lists": {
+    "list.xaxis": {
+      "en": [
+        "Cumulative flight hours",
+        "Calendar date",
+        "Flight index",
+        "Flight season (yearly average)"
+      ],
+      "de": [
+        "Kumulierte Flugstunden",
+        "Kalenderdatum",
+        "Flugnummer",
+        "Flugsaison (Jahresmittel)"
+      ],
+      "fr": [
+        "Heures de vol cumulées",
+        "Date calendaire",
+        "Numéro de vol",
+        "Saison (moyenne annuelle)"
+      ]
+    },
+    "list.metric": {
+      "en": [
+        "Event count",
+        "Event duration"
+      ],
+      "de": [
+        "Ereignisanzahl",
+        "Ereignisdauer"
+      ],
+      "fr": [
+        "Nombre d'événements",
+        "Durée des événements"
+      ]
+    },
+    "list.seats_filter": {
+      "en": [
+        "All gliders",
+        "Single-seater only",
+        "Two-seater only",
+        "Unrecognized type only"
+      ],
+      "de": [
+        "Alle Flugzeuge",
+        "Nur Einsitzer",
+        "Nur Doppelsitzer",
+        "Nur unbekannter Typ"
+      ],
+      "fr": [
+        "Tous les planeurs",
+        "Monoplaces seulement",
+        "Biplaces seulement",
+        "Type non reconnu seulement"
+      ]
+    }
+  }
+}

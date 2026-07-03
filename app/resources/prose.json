@@ -1,0 +1,116 @@
+{
+"en": {
+"danger": [
+"When you first heard about the macho attitude in flight school, you thought to yourself “that’s only a problem for pilots without my superior skills”. The only reason you fly gliders and not proximity wingsuits is that you respect yourself too much to fly anything with an L/D under 40. You clean twigs off your wings as often as bugs, and there is a field out there with your name on it - you are counting on luck not to buy it. Keep your will current, and don’t bet on being the one who makes the phone call after your next flight.",
+"You spend altitude like it’s someone else’s money and treat the ground as a rumour. Your vario has seen things it won’t talk about, but sooner or later the air calls the bluff, and the only open question is whether the trace will still be readable afterwards.",
+"You are not afraid to get into the weeds when it pays. You’re not the maddest pilot on the field, but you’re not above a daft risk now and then. There are things worth living for besides gliding — and if there aren’t, at least try not to run out of speed, height and options all at once.",
+"You take the odd liberty, but you always seem to keep a back door open. You’ve frightened yourself just often enough to know roughly where the edge is, and so far you’ve had the sense to sit on the comfortable side of it. Beware though, you are just a bit of margin erosion away from serious risk.",
+"You have the wisdom of a village elder. You heard there are no old, bold pilots and decided you’d rather like to get old. You couldn’t tell a testament from a tax form, and you’re likelier to be struck by lightning than to bend a glider. Maybe you're the one person of your club that should actually fear the drive to the airfield."
+],
+"terrain": [
+"When the ground rears up you meet it low and slow, like an old friend you fully intend to have close contact with,",
+"You’ll let the terrain creep a touch closer than the book likes whenever a hill gets in the way,",
+"You give rising ground a wide, dull, entirely sensible security margin,"
+],
+"circling": [
+"and also wind it up tight and slow down where the trees can hear your stall warning - staking your spin recovery on a hundred feet you haven’t got.",
+"and you’ll occasionally crank a turn lower and slacker than is clever and trust the yaw string to let it slide.",
+"and you’d sooner land out than thermal away near the deck on the ragged edge of a stall."
+],
+"field": [
+"You always keep a friendly field within glide and a spare one behind it; long before the lift quits you already know where you’re putting it down.",
+"You usually have somewhere to land picked out, and you start hunting for it before you need it rather than after.",
+"You’ll stretch the odd glide and let your options thin out a little, but you generally find a paddock before the paddock finds you.",
+"You press on over country with precious little underneath you, betting that something green turns up before the altimeter loses interest.",
+"You don’t care whats under the glider until your wingtips touch the terrain. The moment there’s a spot of grass under the wings you soldier on, even if that's a tennis field surrounded by lamp posts."
+],
+"seat": {
+"solo_riskier": "It also rather gives away whose neck is on the line: you fly distinctly harder on your own than you do with someone in the other seat — a passenger, it turns out, is the cheapest safety device you own.",
+"dual_riskier": "Curiously, you take more liberties with someone strapped in beside you than when it’s only your own skin on the line — whatever you’re trying to prove up there, your passenger never agreed to be part of the experiment."
+},
+"trend": {
+"much_worse": "Whatever you picked up lately, knock it off — your last {win:.0f} hours blow the {win:.0f} before them clean out of the water, and not in a good way. A jump this size isn’t a one-off, it’s a new philosophy. Pilots whose numbers climb like this tend to be the last to admit it and the first onto the evening news.",
+"worse": "The hours were meant to make you safer; lately they’ve done the opposite. The edges you used to respect are getting shaved, one flight at a time. This is the exact stretch of a flying life where the confidence runs out ahead of the skill.",
+"same": "You’re about as dangerous as you were {win:.0f} hours ago — no better, no worse. The dice don’t tire of being thrown, so holding steady at a scary number isn’t the comfort you’re telling yourself it is.",
+"better": "The line’s drifting the right way. You’re making slightly fewer of the choices that fill obituary columns than you used to — quietly, but it counts. Don’t celebrate by doing something stupid.",
+"much_better": "Something changed. Whether you scared yourself witless, buried a mate, or just decided the kids should keep their parent, your last {win:.0f} hours are far tamer than the {win:.0f} before. Hang onto it — the boneyard is full of pilots who went safe for a season and then reckoned they’d earned a little daft.",
+"still_high": "Progress, of a sort: you’ve dialled it back from completely off your trolley to merely off it. The risk curve is bending down like a polar finally remembering where best L/D lives — but you’re still cruising well past the green arc with the MacCready knob wound up to ‘fortune favours the brave’ and a yaw string that’s stopped filing complaints and started filing grievances. Saner than the {win:.0f} hours before. Not what anyone would call sane."
+}
+},
+"de": {
+"danger": [
+"Als du in der Flugschule zum ersten Mal von der Macho-Haltung hörtest, dachtest du dir: „Das ist nur ein Problem für Piloten ohne mein überragendes Können.“ Du fliegst nur deshalb Segelflugzeuge und keine Proximity-Wingsuits, weil du dich zu sehr respektierst, um etwas mit einer Gleitzahl unter 40 zu fliegen. Du putzt genauso oft Zweige wie Mücken von den Flächen, und da draußen liegt ein Acker mit deinem Namen darauf – du setzt darauf, ihn per Zufall nicht kaufen zu müssen. Halt dein Testament aktuell – und wette nicht darauf, dass du nach deinem nächsten Flug derjenige bist, der anruft.",
+"Du gibst Höhe aus, als wäre es fremdes Geld, und behandelst den Boden als Gerücht. Dein Vario hat Dinge gesehen, über die es nicht spricht, aber früher oder später lässt die Luft dich auflaufen, und die einzige offene Frage ist, ob die Barogrammspur danach noch lesbar ist.",
+"Du scheust dich nicht, ins Unterholz zu gehen, wenn es sich lohnt. Du bist nicht der verrückteste Pilot am Platz, aber vor einem dummen Risiko bist du auch nicht gefeit. Es gibt Dinge, für die es sich zu leben lohnt, außer dem Segelfliegen – und falls nicht, versuch wenigstens, nicht gleichzeitig ohne Fahrt, Höhe und Optionen dazustehen.",
+"Du nimmst dir die eine oder andere Freiheit heraus, lässt dir aber immer eine Hintertür offen. Du hast dir selbst oft genug einen Schrecken eingejagt, um ungefähr zu wissen, wo die Kante verläuft – und bislang hattest du den Verstand, auf der bequemen Seite zu bleiben. Aber Vorsicht: Dich trennt nur ein bisschen Margenschwund vom ernsten Risiko.",
+"Du besitzt die Weisheit eines Dorfältesten. Du hast gehört, dass es keine alten, draufgängerischen Piloten gibt, und beschlossen, dass du lieber alt werden möchtest. Du könntest ein Testament nicht von einer Steuererklärung unterscheiden, und du wirst eher vom Blitz getroffen, als ein Segelflugzeug zu verbiegen. Vielleicht bist du der Einzige in deinem Verein, der tatsächlich die Fahrt zum Flugplatz fürchten sollte."
+],
+"terrain": [
+"Wenn sich das Gelände aufbäumt, begegnest du ihm tief und langsam, wie einem alten Freund, mit dem du unbedingt engen Kontakt haben willst,",
+"Du lässt das Gelände ruhig etwas näher kommen, als es das Lehrbuch gern hätte, sobald ein Hügel im Weg steht,",
+"Du hältst zu ansteigendem Gelände einen großen, langweiligen, völlig vernünftigen Sicherheitsabstand,"
+],
+"circling": [
+"und kurbelst auch da unten eng und langsam, wo die Bäume deine Überziehwarnung hören – und setzt deine Trudelausleitung auf dreißig Meter, die du nicht hast.",
+"und ab und zu ziehst du eine Kurve tiefer und schlapper, als klug ist, und vertraust darauf, dass der Wollfaden es durchgehen lässt.",
+"und du würdest lieber außenlanden, als dich knapp über dem Boden am Rand des Strömungsabrisses hochzukurbeln."
+],
+"field": [
+"Du hast immer ein gutes Feld in Gleitweite und ein zweites in der Hinterhand; lange bevor das Steigen aufhört, weißt du schon, wo du aufsetzt.",
+"Meist hast du dir einen Landeplatz herausgesucht, und du beginnst die Suche, bevor du ihn brauchst, nicht erst danach.",
+"Du streckst hin und wieder einen Gleitflug und lässt die Optionen etwas dünn werden, findest aber in der Regel eine Wiese, bevor die Wiese dich findet.",
+"Du ziehst über Gelände weiter, unter dem herzlich wenig liegt, und setzt darauf, dass etwas Grünes auftaucht, bevor der Höhenmesser die Lust verliert.",
+"Was unter dem Flugzeug ist, kümmert dich nicht, bis deine Flächenenden das Gelände berühren. Sobald ein Fleckchen Gras unter den Flächen liegt, machst du einfach weiter – und sei es ein Tennisplatz, umstellt von Laternenmasten."
+],
+"seat": {
+"solo_riskier": "Es verrät auch, wessen Hals auf dem Spiel steht: Allein fliegst du deutlich beherzter als mit jemandem im anderen Sitz – ein Passagier ist eben die billigste Sicherheitsausrüstung, die du besitzt.",
+"dual_riskier": "Seltsamerweise nimmst du dir mehr heraus, wenn jemand neben dir angeschnallt ist, als wenn nur deine eigene Haut auf dem Spiel steht – was auch immer du da oben beweisen willst, dein Passagier hat dem Experiment nie zugestimmt."
+},
+"trend": {
+"much_worse": "Was auch immer du dir zuletzt angewöhnt hast – lass es. Deine letzten {win:.0f} Stunden hängen die {win:.0f} davor klar ab, und nicht im Guten. Ein Sprung dieser Größe ist kein Ausrutscher, sondern eine neue Philosophie. Piloten, deren Zahlen so klettern, geben es meist als Letzte zu und kommen als Erste in die Abendnachrichten.",
+"worse": "Die Stunden sollten dich sicherer machen; in letzter Zeit bewirken sie das Gegenteil. Die Ränder, die du früher respektiert hast, werden Flug für Flug abgeschliffen. Genau in diesem Abschnitt eines Fliegerlebens läuft das Selbstvertrauen dem Können davon.",
+"same": "Du bist ungefähr so gefährlich wie vor {win:.0f} Stunden – nicht besser, nicht schlechter. Die Würfel werden des Werfens nicht müde, also ist ein konstant hoher Wert nicht der Trost, den du dir einredest.",
+"better": "Die Kurve driftet in die richtige Richtung. Du triffst etwas seltener die Entscheidungen, die Todesanzeigen füllen, als früher – leise, aber es zählt. Feiere das nicht, indem du etwas Dummes machst.",
+"much_better": "Irgendetwas hat sich geändert. Ob du dir selbst zu Tode erschrocken bist, einen Kameraden begraben hast oder einfach beschlossen hast, dass die Kinder ihren Elternteil behalten sollen – deine letzten {win:.0f} Stunden sind weit zahmer als die {win:.0f} davor. Halt daran fest – der Friedhof ist voll von Piloten, die eine Saison lang brav waren und dann fanden, sie hätten sich ein bisschen Wahnsinn verdient.",
+"still_high": "Fortschritt, in gewisser Weise: Du hast von völlig durchgeknallt auf bloß durchgeknallt zurückgeschaltet. Die Risikokurve biegt sich nach unten wie eine Polare, die sich endlich erinnert, wo die beste Gleitzahl sitzt – aber du fliegst immer noch weit jenseits des grünen Bogens, den MacCready-Knopf auf „wer wagt, gewinnt“ gedreht, und der Wollfaden hat aufgehört, Beschwerden einzureichen, und damit begonnen, Klagen zu erheben. Vernünftiger als in den {win:.0f} Stunden davor. Aber vernünftig würde das niemand nennen."
+}
+},
+"fr": {
+"danger": [
+"Quand tu as entendu parler pour la première fois de l’attitude machiste à l’école de vol, tu t’es dit : « Ça n’est un problème que pour les pilotes sans mon talent supérieur. » Si tu voles en planeur plutôt qu’en wingsuit de proximité, c’est seulement que tu te respectes trop pour piloter quoi que ce soit avec une finesse inférieure à 40. Tu enlèves autant de brindilles que de moustiques de tes ailes, et il y a un champ dehors qui porte ton nom – tu comptes sur la chance pour ne pas avoir à l’acheter. Tiens ton testament à jour – et ne parie pas que ce sera toi qui passeras le coup de fil après ton prochain vol.",
+"Tu dépenses l’altitude comme l’argent des autres et tu traites le sol comme une rumeur. Ton vario a vu des choses dont il ne parlera pas, mais tôt ou tard l’air finit par te coincer, et la seule question qui reste est de savoir si la trace sera encore lisible après.",
+"Tu n’as pas peur d’aller dans les ronces quand ça paie. Tu n’es pas le pilote le plus fou du terrain, mais tu n’es pas au-dessus d’un risque idiot de temps en temps. Il y a d’autres raisons de vivre que le vol à voile – et s’il n’y en a pas, essaie au moins de ne pas te retrouver à court de vitesse, d’altitude et d’options d’un coup.",
+"Tu prends quelques libertés, mais tu sembles toujours garder une porte de sortie. Tu t’es fait peur juste assez souvent pour savoir à peu près où se trouve la limite, et jusqu’ici tu as eu le bon sens de rester du côté confortable. Méfie-toi quand même : il ne te manque qu’un peu d’érosion de marge pour basculer dans le risque sérieux.",
+"Tu as la sagesse d’un ancien du village. Tu as entendu qu’il n’y a pas de vieux pilotes téméraires et tu as décidé que tu préférerais bien vieillir. Tu ne saurais pas distinguer un testament d’une feuille d’impôts, et tu as plus de chances d’être frappé par la foudre que de plier un planeur. Tu es peut-être la seule personne de ton club qui devrait vraiment redouter le trajet jusqu’au terrain."
+],
+"terrain": [
+"Quand le relief se dresse, tu l’abordes bas et lent, comme un vieil ami avec qui tu comptes bien avoir un contact rapproché,",
+"Tu laisses le relief s’approcher d’un cran de plus que ne l’aime le manuel dès qu’une colline se met en travers,",
+"Tu gardes une marge de sécurité large, ennuyeuse et tout à fait raisonnable avec le relief montant,"
+],
+"circling": [
+"et tu enroules aussi serré et lent là où les arbres entendent ton avertisseur de décrochage — en misant ta sortie de vrille sur trente mètres que tu n’as pas.",
+"et de temps en temps, tu enroules un virage plus bas et plus mou qu’il n’est sage, en comptant sur le fil de laine pour fermer les yeux.",
+"et tu préférerais te poser aux vaches plutôt que de spiraler ras du sol au bord du décrochage."
+],
+"field": [
+"Tu gardes toujours un bon champ à portée de plané et un autre en réserve ; bien avant que l’ascendance ne lâche, tu sais déjà où tu vas te poser.",
+"Tu as en général un terrain repéré, et tu commences à chercher avant d’en avoir besoin, pas après.",
+"Tu allonges un plané de temps en temps et laisses tes options s’amenuiser un peu, mais tu trouves d’ordinaire un pré avant que le pré ne te trouve.",
+"Tu continues au-dessus d’un pays où il n’y a pas grand-chose en dessous, en pariant que quelque chose de vert apparaîtra avant que l’altimètre ne se lasse.",
+"Ce qu’il y a sous le planeur t’indiffère jusqu’à ce que tes saumons touchent le sol. Dès qu’il y a un carré d’herbe sous les ailes, tu continues vaillamment — même si c’est un court de tennis cerné de lampadaires."
+],
+"seat": {
+"solo_riskier": "Ça trahit aussi qui risque sa peau : tu voles nettement plus fort en solo qu’avec quelqu’un dans l’autre siège — un passager, finalement, c’est le dispositif de sécurité le moins cher que tu possèdes.",
+"dual_riskier": "Curieusement, tu prends plus de libertés avec quelqu’un sanglé à côté de toi que quand il n’y a que ta propre peau en jeu — quoi que tu cherches à prouver là-haut, ton passager n’a jamais accepté de faire partie de l’expérience."
+},
+"trend": {
+"much_worse": "Quoi que tu aies pris comme habitude récemment, arrête. Tes dernières {win:.0f} heures écrasent les {win:.0f} précédentes, et pas dans le bon sens. Un bond pareil n’est pas un accident isolé, c’est une nouvelle philosophie. Les pilotes dont les chiffres grimpent ainsi sont souvent les derniers à l’admettre et les premiers au journal du soir.",
+"worse": "Les heures étaient censées te rendre plus sûr ; ces derniers temps, elles font l’inverse. Les marges que tu respectais se rognent, un vol après l’autre. C’est exactement le moment d’une vie de pilote où la confiance prend de l’avance sur le talent.",
+"same": "Tu es à peu près aussi dangereux qu’il y a {win:.0f} heures – ni mieux, ni pire. Les dés ne se lassent pas d’être lancés, alors rester stable sur un chiffre inquiétant n’est pas le réconfort que tu te racontes.",
+"better": "La courbe dérive dans le bon sens. Tu prends un peu moins souvent qu’avant les décisions qui remplissent les rubriques nécrologiques – discrètement, mais ça compte. Ne fête pas ça en faisant une bêtise.",
+"much_better": "Quelque chose a changé. Que tu te sois fichu une peur bleue, que tu aies enterré un copain ou simplement décidé que les enfants devaient garder leur parent, tes dernières {win:.0f} heures sont bien plus sages que les {win:.0f} précédentes. Accroche-toi – le cimetière est plein de pilotes devenus prudents une saison avant de juger qu’ils avaient mérité un peu de folie.",
+"still_high": "Un progrès, d’une certaine façon : tu es passé de complètement cinglé à simplement cinglé. La courbe de risque s’infléchit comme une polaire qui se rappelle enfin où se trouve la finesse max – mais tu navigues toujours bien au-delà de l’arc vert, la molette MacCready vissée sur « la chance sourit aux audacieux », et le fil de laine a cessé de déposer des plaintes pour déposer des griefs. Plus sage que les {win:.0f} heures précédentes. Pas ce que quiconque appellerait sage."
+}
+}
+}
